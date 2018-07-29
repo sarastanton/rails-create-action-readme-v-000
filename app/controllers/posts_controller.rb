@@ -9,6 +9,7 @@ class PostsController < ApplicationController
 
 	def new
 		@post = Post.new
-		post = Post.new 
+		post = Post.new
+		post.title = params[:title]
 	end
 end
