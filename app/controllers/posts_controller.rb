@@ -7,7 +7,7 @@ class PostsController < ApplicationController
 		@post = Post.find(params[:id])
 	end
 
-	def new
+	def create
 		@post = Post.new
 		@post = Post.new
 		@post.title = params[:title]
